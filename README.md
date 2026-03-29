@@ -1,7 +1,9 @@
 # Product Browser App (Kotlin Multiplatform)
 
-![App Screenshot](https://github.com/Ahmad-Reza/ProductBrowserApp/blob/main/screenshot/Screenshot_20260329_183800.png)
-![App Screenshot](https://github.com/Ahmad-Reza/ProductBrowserApp/blob/main/screenshot/Screenshot_20260329_184044.png)
+<div class="row">
+    <img src="https://github.com/Ahmad-Reza/ProductBrowserApp/blob/main/screenshot/Screenshot_20260329_183800.png?raw=true" style="padding:10px" height="300" width="150">
+    <img src="https://github.com/Ahmad-Reza/ProductBrowserApp/blob/main/screenshot/Screenshot_20260329_184044.png?raw=true" style="padding:10px" height="300" width="150">
+</div>
 
 A Kotlin Multiplatform (KMP) application built with Compose Multiplatform, targeting Android and iOS. This app consumes product data from the DummyJSON API.
 
