@@ -6,7 +6,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,7 +14,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.productbrowserapp.domain.model.Product
-import com.example.productbrowserapp.shareProduct
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -27,14 +25,6 @@ fun ProductDetailScreen(product: Product, onBack: () -> Unit) {
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
-                    }
-                },
-                actions = {
-                    IconButton(onClick = {
-                        val shareText = "Check out this product: ${product.title}\nPrice: ₹ ${product.price}\n\nDescription: ${product.description}"
-                        shareProduct(shareText)
-                    }) {
-                        Icon(Icons.Default.Share, contentDescription = "Share")
                     }
                 }
             )

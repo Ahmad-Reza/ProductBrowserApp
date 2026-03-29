@@ -1,5 +1,7 @@
 # Product Browser App (Kotlin Multiplatform)
 
+![App Screenshot](screenshot.png)
+
 A Kotlin Multiplatform (KMP) application built with Compose Multiplatform, targeting Android and iOS. This app consumes product data from the DummyJSON API.
 
 ## Business Requirements
